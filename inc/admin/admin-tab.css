@@ -1,0 +1,53 @@
+/* Style the tab */
+.eex-up-magical-login-tab {
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    background-color: #f1f1f1;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #ccc;
+    max-width: 95%;
+    margin: 50px auto 5px 0;
+}
+
+/* Style the buttons that are used to open the tab content */
+.eex-up-magical-login-tab button {
+    background-color: inherit;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #ccc;
+    border-bottom-width: 1px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 1px 5px 0 5px;
+    min-width: 100px;
+    padding: 14px 16px;
+    text-align: center;
+    transition: 0.3s;
+  display: block;
+}
+
+/* Change background color of buttons on hover */
+.eex-up-magical-login-tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.eex-up-magical-login-tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.eex-up-magical-login-tab-content {
+    display: none;
+    padding: 8px 10px 30px 30px;
+    border: 3px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    max-width: calc(95% - 40px - 6px);
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

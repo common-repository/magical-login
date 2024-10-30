@@ -1,0 +1,10 @@
+/* Style the table */
+.eex-up-magical-login-option-title{
+  padding: 15px 0 8px 0;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+.eex-up-magical-login-option-subtitle{
+  min-width: 15%;
+ float: left;
+}
